@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
 *{
     padding: 0;
     margin: 0;
@@ -13,11 +14,11 @@ body{
 }
 .container{
     perspective: 1000px;
-    /* display: none; */
+    display: none;
 }
 .code{
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     background-color: antiquewhite;
     width: 100vw;       height: 100vh;
     align-items: center;
@@ -28,6 +29,7 @@ body{
 .code input{
     width: 350px;       height: 30px;
     text-align: center;
+    /* font-family: 'Harry Potter', sans-serif; */
 }
 .card{
     width: 280px;
@@ -43,9 +45,9 @@ body{
 }
 .block{
     position: absolute;
+    width: 400px;
     top:200px;
     right: 600px;
-    perspective: 800px;
     align-items: center;
     background-color: red;
 }
@@ -63,23 +65,27 @@ body{
     backface-visibility: hidden;
 }
 .outside h1{
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: bold;
     color: salmon;
     margin-bottom: 30px;
 }
 .inside{
-    background-color: rgb(255, 244, 79);
+    background-color: salmon;
     box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
     transform: rotateY(180deg);
     backface-visibility: hidden;
+    overflow-y: scroll;
+}
+.inside img{
+    width: 200px;
 }
 .inside h3{
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 20px;
 }
-.frames{
+/* .frames{
     width: 400px;   height: 150px;
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
     border-radius: 5px;
@@ -87,7 +93,7 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 0 0.8rem;
-    /* transform: rotateY(-200deg) rotateX(20deg); */
+
     position: absolute;
 }
 .frames img{
@@ -99,7 +105,6 @@ body{
 .frames p{
    font-size: 20px;
    font-weight: bold;
-   /* transform: rotateY(180deg) rotateY(40deg); */
 }
 .frames:nth-child(1)
 {   width: 300px;
@@ -113,7 +118,6 @@ body{
 }
 .frames:nth-child(2) p{
     font-size: 50px;
-    /* transform: rotateY(200deg) translateY(-20px); */
     letter-spacing: 3px;
 }
 .frames:nth-child(2){
@@ -123,4 +127,72 @@ body{
 {
     top:100px;
     background-color: burlywood;
+} */
+.block{
+    right: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.frames{
+    padding: 0%;
+    height: 150px;      width: 400px; 
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.8rem;
+    position: absolute;
+
+}
+.frames img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.frames p{
+    font-size: 20px;
+    font-weight: bold;
+ }
+.frame1{
+    width: 260px;
+    background-color: coral;
+    box-shadow: 0 0px 5px coral;
+    text-align: center;
+    top:-100px;
+    z-index: -1;
+}
+.frame1 p{
+    transform: translateY(-15px);
+}
+.frame2{
+    width: 350px;
+    background-color: goldenrod;
+    box-shadow: 0 3px 10px gold;
+    text-align: center;
+    top: 0px;
+}
+.frame2 p{
+    transform: translateY(-20px);
+}
+.frame3{
+    width: 400px;
+    background-color: burlywood;
+    text-align: center;
+    top:100px;
+}
+.frames:nth-child(1) p{
+    font-size: 70px;
+    color: aliceblue;
+    text-shadow: 0 0px 7px wheat;
+    letter-spacing: 5px;
+}
+.frames:nth-child(2) p{
+    font-size: 50px;
+    color: aliceblue;
+    text-shadow: 0 0px 5px wheat;
+    letter-spacing: 3px;
 }
