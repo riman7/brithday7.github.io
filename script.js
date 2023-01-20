@@ -9,6 +9,6 @@ function clicked(){
         audio.play();
     }
     else{
-    alert("Incorrect!! Note: no extra space, no symbols");
+    alert("Incorrect!! You are not welcomed to Hogwarts. Note: no extra space, no symbols");
     }
 }
