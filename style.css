@@ -181,8 +181,8 @@ body{
 
 }
 .frames img{
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
@@ -191,19 +191,19 @@ body{
     font-weight: bold;
  }
 .frame1{
-    width: 260px;
-    background-color: coral;
+    width: 240px;
+    background-color: rgb(228, 99, 52);
     box-shadow: 0 0px 5px coral;
     text-align: center;
-    top:-100px;
+    top:-90px;
     z-index: -1;
 }
 .frame1 p{
-    transform: translateY(-15px);
+    transform: translateY(-22px);
 }
 .frame2{
-    width: 350px;
-    background-color: goldenrod;
+    width: 340px;
+    background-color: rgb(211, 155, 13);
     box-shadow: 0 3px 10px gold;
     text-align: center;
     top: 0px;
